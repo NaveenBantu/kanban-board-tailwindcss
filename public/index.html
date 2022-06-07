@@ -12,26 +12,41 @@
 
 <body>
     <div class="flex flex-col w-screen h-screen overflow-auto bg-blue-200">
-        <nav class="flex items-center px-10 w-full h-12 bg-yellow-200">
-            NAV
+        <nav class="flex items-center px-10 w-full h-16 bg-white bg-opacity-75">
+            <a href="#" class="w-10 h-10 cursor-pointer">
+                <img src="img/logo.svg" alt="logo" />
+            </a>
+            <input
+                class="flex items-center h-10 px-4 ml-10 text-sm bg-gray-200 rounded-full focus:outline-none focus:ring"
+                type="search" placeholder="Search for anything…">
+            <div class="ml-20">
+                <a class="mx-2 text-sm font-semibold text-indigo-700" href="#">Projects</a>
+                <a class="mx-2 text-sm font-semibold text-gray-600 hover:text-indigo-700" href="#">Team</a>
+                <a class="mx-2 text-sm font-semibold text-gray-600 hover:text-indigo-700" href="#">Activity</a>
+            </div>
+            <a href="#"
+                class="flex items-center justify-center w-10 h-10 ml-auto overflow-hidden rounded-full cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                    alt="avatar" />
+            </a>
         </nav>
 
-        <header class="p-2 m-8 bg-green-100">
-            HEADER
+        <header class="p-2 m-4">
+            <h1 class="text-2xl font-bold">Team Project Board</h1>
         </header>
 
         <main class="flex px-10 h-full overflow-auto">
             <div class="m-4 flex-shrink-0 flex flex-col w-72 bg-gray-100 rounded-md">
-                <h3 class="p-2 text-gray-800">Backlog</h3>
+                <h3 class="p-2 font-medium text-gray-800">Backlog</h3>
             </div>
             <div class="m-4 flex-shrink-0 flex flex-col w-72 bg-gray-100 rounded-md">
-                <h3 class="p-2 text-gray-800">In Progress</h3>
+                <h3 class="p-2 font-medium text-gray-800">In Progress</h3>
             </div>
             <div class="m-4 flex-shrink-0 flex flex-col w-72 bg-gray-100 rounded-md">
-                <h3 class="p-2 text-gray-800">Ready for Review</h3>
+                <h3 class="p-2 font-medium text-gray-800">Ready for Review</h3>
             </div>
             <div class="m-4 flex-shrink-0 flex flex-col w-72 bg-gray-100 rounded-md">
-                <h3 class="p-2 text-gray-800">Done</h3>
+                <h3 class="p-2 font-medium text-gray-800">Done</h3>
             </div>
         </main>
     </div>
